@@ -1,0 +1,355 @@
+local MHub = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local GunMaker = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local Home = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Visiblee = Instance.new("TextButton")
+
+MHub.Name = "MHub"
+MHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MHub.ResetOnSpawn = false
+
+Frame.Parent = MHub
+Frame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.218404904, 0, 0.248987854, 0)
+Frame.Size = UDim2.new(0, 458, 0, 21)
+Frame.SizeConstraint = Enum.SizeConstraint.RelativeXX
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.882096052, 0, 0.142857149, 0)
+TextButton.Size = UDim2.new(0, 54, 0, 14)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.TextSize = 22.000
+TextButton.TextWrapped = true
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Frame
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.799100518, 0, -0.0095236646, 0)
+Minimize.Size = UDim2.new(0, 54, 0, 14)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 50.000
+Minimize.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.11135371, 0, 0.190476194, 0)
+TextLabel.Size = UDim2.new(0, 298, 0, 17)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "discord.gg/gqXhkcfwJH"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+TextLabel.TextWrapped = true
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(6.43001404e-05, 0, -0.0155203687, 0)
+Frame_2.Size = UDim2.new(0, 458, 0, 273)
+Frame_2.ZIndex = 0
+
+UICorner_2.Parent = Frame_2
+
+GunMaker.Name = "GunMaker"
+GunMaker.Parent = Frame_2
+GunMaker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GunMaker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GunMaker.BorderSizePixel = 0
+GunMaker.Position = UDim2.new(0, 0, 0.234432235, 0)
+GunMaker.Size = UDim2.new(0, 96, 0, 23)
+GunMaker.Font = Enum.Font.Creepster
+GunMaker.Text = "Gun Maker"
+GunMaker.TextColor3 = Color3.fromRGB(0, 0, 0)
+GunMaker.TextScaled = true
+GunMaker.TextSize = 14.000
+GunMaker.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = GunMaker
+
+ScrollingFrame.Parent = GunMaker
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(1, 0, -1.60869563, 0)
+ScrollingFrame.Size = UDim2.new(0, 355, 0, 240)
+ScrollingFrame.Visible = false
+
+TextButton_3.Parent = ScrollingFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0197183099, 0, 0, 0)
+TextButton_3.Size = UDim2.new(0, 310, 0, 29)
+TextButton_3.Font = Enum.Font.Creepster
+TextButton_3.Text = "Clear Guns"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 30.000
+TextButton_3.TextWrapped = true
+
+UICorner_6.Parent = TextButton_3
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0197183099, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 310, 0, 29)
+TextButton_2.Font = Enum.Font.Creepster
+TextButton_2.Text = "Naz#"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 30.000
+TextButton_2.TextWrapped = true
+
+UICorner_4.Parent = TextButton_2
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 10)
+
+Home.Name = "Home"
+Home.Parent = Frame_2
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0, 0, 0.0989011005, 0)
+Home.Size = UDim2.new(0, 96, 0, 23)
+Home.Font = Enum.Font.Creepster
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = Home
+
+ScrollingFrame_2.Parent = Home
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame_2.BorderSizePixel = 0
+ScrollingFrame_2.Position = UDim2.new(1.22916663, 0, 0, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 325, 0, 235)
+
+TextLabel_3.Parent = ScrollingFrame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-2.81700721e-07, 0, 0.29787235, 0)
+TextLabel_3.Size = UDim2.new(0, 301, 0, 83)
+TextLabel_3.Font = Enum.Font.Creepster
+TextLabel_3.Text = "Script by Myulee"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Visiblee.Name = "Visiblee"
+Visiblee.Parent = Frame
+Visiblee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visiblee.BackgroundTransparency = 1.000
+Visiblee.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Visiblee.BorderSizePixel = 0
+Visiblee.Position = UDim2.new(0.799100518, 0, -0.0095236646, 0)
+Visiblee.Size = UDim2.new(0, 54, 0, 14)
+Visiblee.Visible = false
+Visiblee.Font = Enum.Font.SourceSans
+Visiblee.Text = "-"
+Visiblee.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visiblee.TextSize = 50.000
+Visiblee.TextWrapped = true
+
+-- Scripts:
+
+
+local function LYMNSKEE_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+	game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+	script.Parent.MouseButton1Click:Connect(function()
+	for _, i in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+	if i ~= game.Players.LocalPlayer.Backpack.Emotes then
+	if i:IsA("Tool") then
+	i:Destroy()
+	end
+	end
+	end
+	end)
+	end
+	coroutine.wrap(LYMNSKEE_fake_script)()
+local function LYMNSKE_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	for i = 1,35 do
+              local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Gameplay"):WaitForChild("FakeGun"):FireServer(unpack(args))
+      end    
+      wait(1)
+      
+      game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+      
+      wait(1)
+	
+		local pl = game.Players.LocalPlayer
+		local s = pl.Backpack:GetChildren()
+		local 	s0 = {}
+		for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
+		-----------
+		s0[3].Grip = CFrame.new(1.5, 0.300000012, -4.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[3].Parent = pl.Character
+		s0[4].Grip = CFrame.new(0.5, 0.300000012, -4.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[4].Parent = pl.Character
+		s0[5].Grip = CFrame.new(-0.5, 0.300000012, -4.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[5].Parent = pl.Character
+		s0[6].Grip = CFrame.new(-1.5, 0.300000012, -4.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[6].Parent = pl.Character
+		s0[7].Grip = CFrame.new(-2.5, 0.300000012, -4.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[7].Parent = pl.Character
+	
+	
+		s0[8].Grip = CFrame.new(1.5, 0.300000012, -5.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[8].Parent = pl.Character
+		s0[9].Grip = CFrame.new(1.5, 0.300000012, -6.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[9].Parent = pl.Character
+		s0[10].Grip = CFrame.new(1.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[10].Parent = pl.Character
+		s0[11].Grip = CFrame.new(1.5, 0.300000012, -8.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[11].Parent = pl.Character
+		s0[15].Grip = CFrame.new(1.5, 0.300000012, -9.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[15].Parent = pl.Character
+		s0[30].Grip = CFrame.new(1.5, 0.300000012, -10.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[30].Parent = pl.Character
+	
+	
+	
+	
+		s0[12].Grip = CFrame.new(-2.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[12].Parent = pl.Character
+		s0[13].Grip = CFrame.new(-2.5, 0.300000012, -8.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[13].Parent = pl.Character
+		s0[14].Grip = CFrame.new(-2.5, 0.300000012, -9.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[14].Parent = pl.Character
+		s0[31].Grip = CFrame.new(-2.5, 0.300000012, -10.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[31].Parent = pl.Character
+	
+	
+	
+		s0[16].Grip = CFrame.new(-1.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[16].Parent = pl.Character
+		s0[17].Grip = CFrame.new(-0.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[17].Parent = pl.Character
+		s0[18].Grip = CFrame.new(0.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[18].Parent = pl.Character
+		s0[19].Grip = CFrame.new(2.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[19].Parent = pl.Character
+		s0[20].Grip = CFrame.new(3.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[20].Parent = pl.Character
+		s0[21].Grip = CFrame.new(4.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[21].Parent = pl.Character
+		s0[22].Grip = CFrame.new(5.5, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[22].Parent = pl.Character
+	
+	
+		s0[23].Grip = CFrame.new(5.5, 0.300000012, -6.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[23].Parent = pl.Character
+		s0[24].Grip = CFrame.new(5.5, 0.300000012, -5.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[24].Parent = pl.Character
+		s0[25].Grip = CFrame.new(5.5, 0.300000012, -4.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[25].Parent = pl.Character
+	
+	
+		s0[26].Grip = CFrame.new(2.5, 0.300000012, -10.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[26].Parent = pl.Character
+		s0[27].Grip = CFrame.new(3.5, 0.300000012, -10.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[27].Parent = pl.Character
+		s0[28].Grip = CFrame.new(4.5, 0.300000012, -10.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[28].Parent = pl.Character
+		s0[29].Grip = CFrame.new(5.5, 0.300000012, -10.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+		s0[29].Parent = pl.Character
+	end)
+end
+coroutine.wrap(LYMNSKE_fake_script)()
+local function WSYVEVF_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	script.Parent.GunMaker.MouseButton1Click:Connect(function()
+		script.Parent.GunMaker.ScrollingFrame.Visible = true
+		script.Parent.Home.ScrollingFrame.Visible = false
+	end)
+	
+	script.Parent.Home.MouseButton1Click:Connect(function()
+		script.Parent.GunMaker.ScrollingFrame.Visible = false
+		script.Parent.Home.ScrollingFrame.Visible = true
+	end)
+end
+coroutine.wrap(WSYVEVF_fake_script)()
+local function PZDQ_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Minimize.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = false
+		script.Parent.Minimize.Visible = false
+		script.Parent.Visiblee.Visible = true
+	end)
+	
+	script.Parent.Visiblee.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		script.Parent.Minimize.Visible = true
+		script.Parent.Visiblee.Visible = false
+	end)
+end
+coroutine.wrap(PZDQ_fake_script)()
+local function NHQO_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MHub:Destroy()
+	end)
+end
+coroutine.wrap(NHQO_fake_script)()
